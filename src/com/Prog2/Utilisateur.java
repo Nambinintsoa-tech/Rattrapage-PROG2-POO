@@ -13,6 +13,10 @@ public class Utilisateur {
         this.email = email;
     }
 
+    public Utilisateur(String a2) {
+    }
+
+
     public String getId() {
         return id;
     }

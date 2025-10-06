@@ -9,19 +9,19 @@ public class Publication {
     private Utilisateur proprietaire;
     private List<Message> message;
 
-    public Publication(String id, Utilisateur proprietaire, List<Message> message) {
+    public Publication(String id, Utilisateur proprietaire) {
         this.id = id;
         this.proprietaire = proprietaire;
         this.message = new ArrayList<>();
     }
 
-    public void ajouterMessage(Message message) {
+    public void ajouterMessage(Messages message) {
         messages.add(message);
     }
 
     public void afficherAuteurs() {
         List<String> dejaAffiches = new ArrayList<>();
-        for (Message m : message) {
+        for (Messages m : message) {
             String uid = m.getAuteur().getId();
             if (!dejaAffiches.contains(uid)) {
                 m.getAuteur().afficherInfos();

@@ -1,13 +1,13 @@
 package com.Prog2;
 import java.time.LocalDateTime;
 
-public class Message {
+public class Messages {
     private String texte;
     private boolean confidential;
     private LocalDateTime dateHeure;
     private Utilisateur auteur;
 
-    public Message(String texte, boolean confidential, LocalDateTime dateHeure, Utilisateur auteur) {
+    public Messages(String texte, boolean confidential, Utilisateur auteur) {
         this.texte = texte;
         this.confidential = confidential;
         this.dateHeure = LocalDateTime.now();
